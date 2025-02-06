@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Music Festival</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style type="text/css">
+		main{
+			margin: 1%;
+			padding: 2%;
+			text-align: center;
+			background-color: #ffffff80;
+			text-align: left;
+		}
+		main>section>form>label{
+			display: inline-block;
+			min-width: 100px;
+			margin: 0.5%;
+		}
+		main>section>form>button{
+			background-color: #ff008b;
+			color: #fff;
+			border: none;
+			padding: 1%;
+		}
+		main>section>form>button:hover{
+			background-color: #a1e01f;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<figure>
+			<a href="index.html">
+				<img src="imag/logo.jpg" alt="Logo Electro Music Festival" />
+			</a>
+		</figure>
+		<form>
+			<input type="text" name="user" placeholder="usuario" /><br />
+			<input type="password" name="password" placeholder="contraseña"><br />
+			<button type="submit">Login</button><br />
+			<p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+		</form>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="programa.html">PROGRAMA</a></li>
+			<li><a href="contacto.html">CONTACTO</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section></section>
+		<section>
+			<h2>FORMULARIO DE REGISTRO</h2>
+			<form>
+				<label>Nombre*</label><br />
+				<input type="text" name="nombre" placeholder="escribe tu nombre" required /><br />
+				<label>Apellidos*</label><br />
+				<input type="text" name="apellidos" placeholder="escribe tus apellidos" required /><br />
+				<label>DNI*</label><br />
+				<input type="text" name="dni" placeholder="12345678X" minlength="9" maxlength="9" required /><br />
+				<label>Fecha de nacimiento</label><br />
+				<input type="date" name="nacimiento" /><br />
+				<label>Nombre de usuario*</label><br />
+				<input type="text" name="usuario" placeholder="usuario" required /><br />
+				<label>Contraseña*</label><br />
+				<input type="password" name="password" placeholder="contraseña" required /><br />
+				<label>Email*</label><br />
+				<input type="email" name="email" placeholder="escribe tu correo electrónico" required /><br />
+				<label>Sexo*</label><br />
+				<input type="radio" name="sexo" value="h" required /><label>hombre</label>
+				<input type="radio" name="sexo" value="m" required /><label>mujer</label>
+				<input type="radio" name="sexo" value="nb" required /><label>no binario</label><br />
+				<label>¿Qué estilos musicales te gustan?</label><br />
+				<input type="checkbox" name="rock" value="ok" /><label>electrónica</label>
+				<input type="checkbox" name="rock" value="ok" /><label>rock</label>
+				<input type="checkbox" name="rock" value="ok" /><label>pop</label><br />
+				<input type="checkbox" name="rock" value="ok" /><label>heavy metal</label>
+				<input type="checkbox" name="rock" value="ok" /><label>punk</label>
+				<input type="checkbox" name="rock" value="ok" /><label>reggae</label><br />
+				<input type="checkbox" name="rock" value="ok" /><label>jazz</label>
+				<input type="checkbox" name="rock" value="ok" /><label>rap</label>
+				<input type="checkbox" name="rock" value="ok" /><label>clásica</label><br />
+				<input type="checkbox" name="terminos" value="ok" required />
+				<label>"Acepto los términos"*</label><br />
+				<button type="submit">Enviar</button>
+				<button type="reset">Borrar</button>
+			</form>
+		</section>
+		<section></section>
+		
+	</main>
+	<footer>
+		<h2>Electronic Music Festival, el festival del verano en Barcelona.</h2>
+		<br />
+		<p>By Cristina Roig</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Shadows+Into+Light&display=swap');
+/*RESET*/
+figure img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	margin-right: 4%;
+}
+body{
+	font-family: arial;
+}
+h1, h2, h3{
+	font-family: "Shadows Into Light", cursive;
+  	font-weight: 400;
+  	font-style: normal;
+}
+html{
+	background-image: url(imag/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 1% 25%;
+}
+/*HEADER*/
+header{
+	margin: 1%;
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap-reverse;;
+	align-items: center;
+}
+header>figure{
+	flex: 3;
+	min-width: 220px;
+}
+
+header>form{
+	flex: 7;
+	margin: 2%;
+	text-align: right;
+	min-width: 380px;
+}
+header>form>input{
+	margin: 0.5%;
+}
+header>form>button{
+	margin: 0.5%;
+}
+header>form>p{
+	text-align: right;
+}
+header>form>p>a{
+	color: #fff;
+	font-style: italic;
+}
+/*NAV*/
+nav>ul>li{
+	display: inline-block;
+	margin-right: 4%;
+	padding: 2%;
+	font-weight: bold;
+	transition: all 0.5s;
+}
+nav>ul>li>a{
+	color: #fff;
+}
+nav>ul>li:hover{
+	background-color: #ff008b;
+}
+nav>ul{
+	text-align: center;
+}
+nav{
+	background-color: #000;
+	margin: 1%;
+}
+/*MAIN*/
+/*Como las páginas que no están en el menú tienen un main diferente, lo he puesto en cada página*/
+
+/*FOOTER*/
+footer{
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 1%;
+	margin: 1%;
+}

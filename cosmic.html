@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Music Festival</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style type="text/css">
+		main{
+			margin: 1%;
+		}
+		main>section{
+			display: flex;
+			flex-wrap: wrap-reverse;;
+			background-image: url("imag/cosmic.jpg");
+			background-size: cover;
+			background-position: 1% 35%;
+			padding: 3%;
+		}
+		main>section>article{
+			background-color: #ffffff90;
+			padding: 3%;
+		}
+		main>section>article:nth-of-type(1){
+			flex: 3;
+			min-width: 250px;
+		}
+		main>section>article:last-of-type{
+			flex: 7;
+			min-width: 350px;
+		}
+		main>section>article>a{
+			background-color: #ff008b;
+			color: #fff;
+			padding: 2%;
+		}
+		main>section>article>a:hover{
+			background-color: #a1e01f;
+			color: #000;
+			padding: 2%;
+		}
+		main>section>article>section{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		main>section>article>section>figure{
+			flex: 1;
+			margin: 0.5%;
+			min-width: 250px;
+		}
+		main>article{
+			display: flex;
+			justify-content: center;
+		}
+		main>article>a:first-of-type{
+			flex: 1;
+			margin: 0 0 0 4%;
+		}
+		main>article>a:last-of-type{
+			flex: 1;
+			text-align: right;
+		}
+		main>article>a{
+			background-color: #ff008b;
+			color: #fff;
+			padding: 1%;
+		}
+		main>article>a:hover{
+			background-color: #a1e01f;
+			color: #000;
+		}
+		@media screen and (max-width: 765px){
+			main>section>article>figure{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<figure>
+			<a href="index.html">
+				<img src="imag/logo.jpg" alt="Logo Electro Music Festival" />
+			</a>
+		</figure>
+		<form>
+			<input type="text" name="user" placeholder="usuario" /><br />
+			<input type="password" name="password" placeholder="contraseña"><br />
+			<button type="submit">Login</button><br />
+			<p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+		</form>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="programa.html">PROGRAMA</a></li>
+			<li><a href="contacto.html">CONTACTO</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<article>
+				<br />
+				<p>ESPACIO: Ritmia Club</p>
+				<p>ESCENARIO: TBA</p>
+				<p>HORARIO: 9pm a 00:00</p>
+				<a href="#">COMPRAR ENTRADAS</a>
+			</article>
+			<article>
+				<h2>COSMIC PULSE</h2>
+				<p>Cosmic Pulse se erige como líder en la vanguardia de la música electrónica cosmopolita, fusionando sonidos ancestrales que trascienden fronteras en composiciones electrónicas fascinantes, enraizadas en su herencia tropical. Criado en las Islas Canarias, este versátil músico, DJ y productor se desenvuelve en la composición musical para películas y dirige su propio sello discográfico internacional, Vida. Además de su destreza en guitarra, bajo, percusión y piano, ha colaborado con reconocidos artistas. Su pasión por la música lo ha llevado a presentarse en prestigiosos clubes en Berlín, París, Nueva York y Ibiza, donde comparte su fascinación por el poder unificador de la música. Cosmic continúa moldeando su distintivo y apasionado sonido, siempre abierto a nuevas influencias con agilidad y emoción.</p>
+				<section>
+					<figure>
+						<img src="imag/club.jpg" alt="Ritmia Club" />
+					</figure>
+					<figure>
+						<img src="imag/cosmicdj.jpg" alt="Cosmic Pulse" />
+					</figure>
+				</section>
+			</article>
+		</section>
+		<article>
+			<a href="nexus.html">Anterior</a>
+			<a href="luna.html">Siguiente</a>
+		</article>
+	</main>
+		
+	<footer>
+		<h2>Electronic Music Festival, el festival del verano en Barcelona.</h2>
+		<br />
+		<p>By Cristina Roig</p>
+	</footer>
+</body>
+</html>

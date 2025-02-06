@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Music Festival</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style type="text/css">
+		main{
+			margin: 1%;
+			padding: 2%;
+			text-align: center;
+			background-color: #ffffff80;
+		}
+		main>section{
+			display: flex;
+			flex-wrap: wrap-reverse;
+			align-items: center;
+		}
+		main>section>article{
+			flex: 1;
+			text-align: left;
+			padding: 2%;
+		}
+		main>section>article>a{
+			color: #ff008b;
+		}
+		main>section>article>form>label{
+			margin: 1%;
+		}
+		main>section>article>form>select{
+			margin: 1% 0;
+		}
+		main>section>article>form>textarea{
+			resize: none;
+			margin: 1%;
+			min-width: 300px;
+			min-height: 100px;
+		}
+		main>section>article>form>button{
+			background-color: #ff008b;
+			color: #fff;
+			border: none;
+			padding: 1%;
+		}
+		main>section>article>form>button:hover{
+			background-color: #a1e01f;
+			color: #000;
+		}
+		iframe{
+			width: 100%;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<figure>
+			<a href="index.html">
+				<img src="imag/logo.jpg" alt="Logo Electro Music Festival" />
+			</a>
+		</figure>
+		<form>
+			<input type="text" name="user" placeholder="usuario" /><br />
+			<input type="password" name="password" placeholder="contraseña"><br />
+			<button type="submit">Login</button><br />
+			<p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+		</form>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="programa.html">PROGRAMA</a></li>
+			<li><a href="contacto.html">CONTACTO</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>¿TIENES ALGUNA CONSULTA? NO DUDES EN ESCRIBIRNOS. TE CONTESTATERMOS LO ANTES POSIBLE</h2>
+		<section>
+			<article>
+				<h5>DIRECCIÓN</h5>
+				<p>Calle de la Paz, 12, 08930 San Adriá de Besós, Barcelona</p>
+				<h5>TELÉFONO</h5>
+				<a href="tel:931234567">931234567</a>
+				<h5>E-MAIL</h5>
+				<p>PRENSA: </p><a href="mailto:press@electronicmusicfest.com">press@electronicmusicfest.com</a>
+				<p>COMUNIDAD: </p><a href="mailto:vecinos@electronicmusicfest.com">vecinos@electronicmusicfest.com</a>
+			</article>
+			<article>
+				<form>
+					<label>Nombre </label><br />
+					<input type="text" name="N"/><br />
+					<label>Motivo de la consulta</label><br />
+					<select name="motivo" required>
+						<option selected disabled value="">Selecciona la opción que más se ajusta a tu consulta</option>
+						<option value="en">Entradas</option>
+						<option value="in">Información práctica</option>
+						<option value="tr">Trabajar con nosotros</option>
+						<option value="pm">Propuestas musicales</option>
+						<option value="pat">Patrocinio</option>
+						<option value="pp">Propuestas de prensa</option>
+						<option value="o">Otros</option>
+					</select>
+					<br />
+					<label>Email </label><br />
+					<input type="email" name="email" required />
+					<br />
+					<label>Consulta </label><br />
+					<textarea placeholder="escribe aquí tu consulta" required></textarea><br />
+					<button type="submit">Enviar</button>
+					<button type="reset">Borrar</button>
+				</form>
+			</article>
+		</section>
+		<br />
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.31205696686!2d2.2207396608164522!3d41.41074419442765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3570b2f21c5%3A0xe64ccf62dc44a7ed!2sParc%20del%20F%C3%B2rum!5e0!3m2!1sca!2ses!4v1721904929975!5m2!1sca!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</main>
+
+	<footer>
+		<h2>Electronic Music Festival, el festival del verano en Barcelona.</h2>
+		<br />
+		<p>By Cristina Roig</p>
+	</footer>
+</body>
+</html>

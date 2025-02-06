@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Music Festival</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style type="text/css">
+		main{
+			margin: 1%;
+			padding: 2%;
+			text-align: center;
+			background-color: #ffffff80;
+		}
+		main h2{
+			font-size: 4.5vw;
+		}
+		main>section>article{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		main>section>article>h2{
+			flex: 4;
+			min-width: 300px;
+		}
+		main>section>article>h2>a{
+			color: #000;
+			transition: all 0.5s;
+		}
+		main>section>article>h2>a:hover{
+			color: #fff;
+			font-size: 4.8vw;
+			text-shadow: 0px 0px 10px #000;
+		}
+		main>section>article>figure{
+			flex: 6;
+			min-width: 380px;
+			margin: 0;
+			filter: grayscale(100%);
+			transition: all 0.5s;
+		}
+		main>section>article>figure:hover{
+			scale: 1.05;
+			filter: grayscale(0);
+			box-shadow: 0px 0px 10px #000;
+		}
+		article:nth-of-type(even){
+			background-color: #a1e01f60;
+			flex-direction: row-reverse;
+		}
+		article:nth-of-type(odd){
+			background-color: #ff008b60;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<figure>
+			<a href="index.html">
+				<img src="imag/logo.jpg" alt="Logo Electro Music Festival" />
+			</a>
+		</figure>
+		<form>
+			<input type="text" name="user" placeholder="usuario" /><br />
+			<input type="password" name="password" placeholder="contraseña"><br />
+			<button type="submit">Login</button><br />
+			<p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+		</form>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="programa.html">PROGRAMA</a></li>
+			<li><a href="contacto.html">CONTACTO</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>9 · 10 · 11 AGOSTO</h2>
+		<h4>VIERNES 9 DE AGOSTO · PARQUE CENTRAL · 5PM - 11PM</h4>
+		<section>
+			<article>
+				<h2><a href="nova.html">NOVA BEATRIX</a></h2>
+				<figure>
+					<a href="nova.html"><img src="imag/nova.jpg" alt="Nova Beatrix" /></a>
+				</figure>
+			</article>
+			<br />
+			<article>
+				<h2><a href="nexus.html">NEXUS BEAT</a></h2>
+				<figure>
+					<a href="nexus.html"><img src="imag/nexus.jpg" alt="Nexus Beat" /></a>
+				</figure>		
+			</article>
+		</section>
+		<h4>SÁBADO 10 DE AGOSTO · RITMIA CLUB · 9PM - 3AM</h4>
+		<section>
+			<article>
+				<h2><a href="cosmic.html">COSMIC PULSE</a></h2>
+				<figure>
+					<a href="cosmic.html"><img src="imag/cosmic.jpg" alt="Cosmic Pulse" /></a>
+				</figure>	
+			</article>
+			<br />
+			<article>
+				<h2><a href="luna.html">LUNA ELECTRA</a></h2>
+				<figure>
+					<a href="luna.html"><img src="imag/luna.jpg" alt="Luna Electra" /></a>
+				</figure>
+			</article>
+		</section>
+		<h4>DOMINGO 11 DE AGOSTO · LABERINTO SONORO · 4PM A 10PM</h4>
+		<section>
+			<article>
+				<h2><a href="vixen.html">VIXEN VINYL</a></h2>
+				<figure>
+					<a href="vixen.html"><img src="imag/vixen.jpg" alt="Vixen Vinyl" /></a>
+				</figure>
+			</article>
+			<br />
+			<article>
+				<h2><a href="zenith.html">ZENITH ZERO</a></h2>
+				<figure>
+					<a href="zenith.html"><img src="imag/zenith.jpg" alt="Zenith Zero" /></a>
+				</figure>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<h2>Electronic Music Festival, el festival del verano en Barcelona.</h2>
+		<br />
+		<p>By Cristina Roig</p>
+	</footer>
+</body>
+</html>

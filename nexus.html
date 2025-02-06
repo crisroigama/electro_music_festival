@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Music Festival</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style type="text/css">
+		main{
+			margin: 1%;
+		}
+		main>section{
+			display: flex;
+			flex-wrap: wrap-reverse;;
+			background-image: url("imag/Nexus.jpg");
+			background-size: cover;
+			background-position: 1% 35%;
+			padding: 3%;
+		}
+		main>section>article{
+			background-color: #ffffff90;
+			padding: 3%;
+		}
+		main>section>article:nth-of-type(1){
+			flex: 3;
+			min-width: 250px;
+		}
+		main>section>article:last-of-type{
+			flex: 7;
+			min-width: 350px;
+		}
+		main>section>article>a{
+			background-color: #ff008b;
+			color: #fff;
+			padding: 2%;
+		}
+		main>section>article>a:hover{
+			background-color: #a1e01f;
+			color: #000;
+			padding: 2%;
+		}
+		main>section>article>section{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		main>section>article>section>figure{
+			flex: 1;
+			margin: 0.5%;
+			min-width: 250px;
+		}
+		main>article{
+			display: flex;
+			justify-content: center;
+		}
+		main>article>a:first-of-type{
+			flex: 1;
+			margin: 0 0 0 4%;
+		}
+		main>article>a:last-of-type{
+			flex: 1;
+			text-align: right;
+		}
+		main>article>a{
+			background-color: #ff008b;
+			color: #fff;
+			padding: 1%;
+		}
+		main>article>a:hover{
+			background-color: #a1e01f;
+			color: #000;
+		}
+		@media screen and (max-width: 765px){
+			main>section>article>figure{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<figure>
+			<a href="index.html">
+				<img src="imag/logo.jpg" alt="Logo Electro Music Festival" />
+			</a>
+		</figure>
+		<form>
+			<input type="text" name="user" placeholder="usuario" /><br />
+			<input type="password" name="password" placeholder="contraseña"><br />
+			<button type="submit">Login</button><br />
+			<p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+		</form>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="programa.html">PROGRAMA</a></li>
+			<li><a href="contacto.html">CONTACTO</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<article>
+				<br />
+				<p>ESPACIO: Parque Central</p>
+				<p>ESCENARIO: TBA</p>
+				<p>HORARIO: 8pm a 11pm</p>
+				<a href="#">COMPRAR ENTRADAS</a>
+			</article>
+			<article>
+				<h2>NEXUS BEAT</h2>
+				<p>Nexus Beat es el seudónimo del DJ y productor británico Tomas Ashworth. Con base en Berlín, es conocido por sus sets eclécticos y producciones melódicas que fusionan elementos de house, disco y techno. Algunas de sus pistas más conocidas incluyen «Euphoria» y «Midnight in the Oasis».</p>
+				<section>
+					<figure>
+						<img src="imag/Nexusdj.jpg" alt="Nexus Beat">
+					</figure>
+					<figure>
+						<img src="imag/central.jpg" alt="Parque Central" />
+					</figure>
+				</section>
+			</article>
+		</section>
+		<article>
+			<a href="nova.html">Anterior</a>
+			<a href="cosmic.html">Siguiente</a>
+		</article>
+	</main>
+		
+	<footer>
+		<h2>Electronic Music Festival, el festival del verano en Barcelona.</h2>
+		<br />
+		<p>By Cristina Roig</p>
+	</footer>
+</body>
+</html>

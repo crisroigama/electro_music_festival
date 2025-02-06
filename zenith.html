@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Music Festival</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style type="text/css">
+		main{
+			margin: 1%;
+		}
+		main>section{
+			display: flex;
+			flex-wrap: wrap-reverse;;
+			background-image: url("imag/zenith.jpg");
+			background-size: cover;
+			background-position: 90% 50%;
+			padding: 3%;
+		}
+		main>section>article{
+			background-color: #ffffff90;
+			padding: 3%;
+		}
+		main>section>article:nth-of-type(1){
+			flex: 3;
+			min-width: 250px;
+		}
+		main>section>article:last-of-type{
+			flex: 7;
+			min-width: 350px;
+		}
+		main>section>article>a{
+			background-color: #ff008b;
+			color: #fff;
+			padding: 2%;
+		}
+		main>section>article>a:hover{
+			background-color: #a1e01f;
+			color: #000;
+			padding: 2%;
+		}
+		main>section>article>section{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		main>section>article>section>figure{
+			flex: 1;
+			margin: 0.5%;
+			min-width: 250px;
+		}
+		main>article{
+			display: flex;
+			justify-content: center;
+		}
+		main>article>a:first-of-type{
+			flex: 1;
+			margin: 0 0 0 4%;
+		}
+		main>article>a:last-of-type{
+			flex: 1;
+			text-align: right;
+		}
+		main>article>a{
+			background-color: #ff008b;
+			color: #fff;
+			padding: 1%;
+		}
+		main>article>a:hover{
+			background-color: #a1e01f;
+			color: #000;
+		}
+		@media screen and (max-width: 765px){
+			main>section>article>figure{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<figure>
+			<a href="index.html">
+				<img src="imag/logo.jpg" alt="Logo Electro Music Festival" />
+			</a>
+		</figure>
+		<form>
+			<input type="text" name="user" placeholder="usuario" /><br />
+			<input type="password" name="password" placeholder="contraseña"><br />
+			<button type="submit">Login</button><br />
+			<p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+		</form>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="programa.html">PROGRAMA</a></li>
+			<li><a href="contacto.html">CONTACTO</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<article>
+				<br />
+				<p>ESPACIO: Laberinto Sonoro</p>
+				<p>ESCENARIO: TBA</p>
+				<p>HORARIO: 7pm a 10pm</p>
+				<a href="#">COMPRAR ENTRADAS</a>
+			</article>
+			<article>
+				<h2>ZENITH ZERO</h2>
+				<p>Zenith Zero, cuyo nombre real es Adrian Klein, es un influyente DJ y productor de música electrónica originario de Berlín, la cuna del techno.  Desde sus inicios en los clubes underground de la ciudad, Zenith Zero ha cultivado un sonido único que lo distingue en la escena electrónica global. Su música se caracteriza por melodías hipnóticas y paisajes sonoros texturizados, creando una atmósfera envolvente que invita a la introspección y al movimiento.</p>
+				<p>Más allá de su destreza técnica, Zenith Zero es reconocido por sus sets emotivos y su habilidad para conectar con el público a un nivel profundo.  Cada una de sus presentaciones es un viaje sonoro cuidadosamente curado, donde la música cuenta una historia y las emociones fluyen libremente en la pista de baile.</p>
+				<section>
+					<figure>
+						<img src="imag/laberinto.jpg" alt="Laberinto Sonoro" />
+					</figure>
+					<figure>
+						<img src="imag/zenithdj.jpg" alt="Zenith Zero" />
+					</figure>
+				</section>
+			</article>
+		</section>
+		<article>
+			<a href="vixen.html">Anterior</a>
+			<a href="nova.html">Siguiente</a>
+		</article>
+	</main>
+		
+	<footer>
+		<h2>Electronic Music Festival, el festival del verano en Barcelona.</h2>
+		<br />
+		<p>By Cristina Roig</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Music Festival</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style type="text/css">
+		main{
+			margin: 1%;
+		}
+		main>section{
+			display: flex;
+			flex-wrap: wrap-reverse;;
+			background-image: url("imag/nova.jpg");
+			background-size: cover;
+			background-position: 1% 35%;
+			padding: 3%;
+		}
+		main>section>article{
+			background-color: #ffffff90;
+			padding: 3%;
+		}
+		main>section>article:nth-of-type(1){
+			flex: 3;
+			min-width: 250px;
+		}
+		main>section>article:last-of-type{
+			flex: 7;
+			min-width: 350px;
+		}
+		main>section>article>a{
+			background-color: #ff008b;
+			color: #fff;
+			padding: 2%;
+		}
+		main>section>article>a:hover{
+			background-color: #a1e01f;
+			color: #000;
+			padding: 2%;
+		}
+		main>section>article>section{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		main>section>article>section>figure{
+			flex: 1;
+			margin: 0.5%;
+			min-width: 250px;
+		}
+		main>article{
+			display: flex;
+			justify-content: center;
+		}
+		main>article>a:first-of-type{
+			flex: 1;
+			margin: 0 0 0 4%;
+		}
+		main>article>a:last-of-type{
+			flex: 1;
+			text-align: right;
+		}
+		main>article>a{
+			background-color: #ff008b;
+			color: #fff;
+			padding: 1%;
+		}
+		main>article>a:hover{
+			background-color: #a1e01f;
+			color: #000;
+		}
+		@media screen and (max-width: 765px){
+			main>section>article>figure{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<figure>
+			<a href="index.html">
+				<img src="imag/logo.jpg" alt="Logo Electro Music Festival" />
+			</a>	
+		</figure>
+		<form>
+			<input type="text" name="user" placeholder="usuario" /><br />
+			<input type="password" name="password" placeholder="contraseña"><br />
+			<button type="submit">Login</button><br />
+			<p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+		</form>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="programa.html">PROGRAMA</a></li>
+			<li><a href="contacto.html">CONTACTO</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<article>
+				<br />
+				<p>ESPACIO: Parque Central</p>
+				<p>ESCENARIO: TBA</p>
+				<p>HORARIO: 5pm a 8pm</p>
+				<a href="#">COMPRAR ENTRADAS</a>
+			</article>
+			<article>
+				<h2>NOVA BEATRIX</h2>
+				<p>Nova Beatrix, una DJ/Productora electrificante y futura superestrella, ha estado causando sensación en el mundo del techno de alta energía. Con una versatilidad única que le permite cautivar a cualquier audiencia, desde shows íntimos en clubes hasta los grandes escenarios de festivales de renombre como Oasis Festival, Nova se ha convertido rápidamente en una fuerza a tener en cuenta en la industria de la música electrónica. El viaje musical de Nova comenzó desde joven al estar rodeada de música electrónica gracias a su familia de artistas, lo que creó en ella una pasión inquebrantable por el techno y ha encendido el escenario con sus actuaciones electrizantes.</p>
+				<p>Su habilidad para crear el ambiente y construir anticipación no solo ha impresionado a estos artistas de clase mundial, sino que también ha solidificado su reputación como un talento destacado en la comunidad del techno. Lo que realmente distingue a Nova Beatrix es su carisma único y su pasión por llevar los límites de su arte más allá. Se mantiene constantemente actualizada con las últimas tendencias y tecnologías en el mundo de la música electrónica, asegurando que sus sets no sean solo actuaciones, sino experiencias inolvidables.</p>
+				<section>
+					<figure>
+						<img src="imag/atardecer_central.jpg" alt="Parque Central" />
+					</figure>
+					<figure>
+						<img src="imag/novadj.jpg" alt="Nova Beatrix" />
+					</figure>
+				</section>
+			</article>
+		</section>
+		<article>
+			<a href="zenith.html">Anterior</a>
+			<a href="nexus.html">Siguiente</a>
+		</article>
+	</main>
+		
+	<footer>
+		<h2>Electronic Music Festival, el festival del verano en Barcelona.</h2>
+		<br />
+		<p>By Cristina Roig</p>
+	</footer>
+</body>
+</html>
